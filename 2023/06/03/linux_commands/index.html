@@ -17,8 +17,8 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/images/linux.png">
 <meta property="og:image" content="http://example.com/images/rwx%E6%9D%83%E9%99%90.png">
-<meta property="article:published_time" content="2023-06-03T11:10:27.978Z">
-<meta property="article:modified_time" content="2023-06-03T11:10:27.978Z">
+<meta property="article:published_time" content="2023-06-03T11:15:57.449Z">
+<meta property="article:modified_time" content="2023-06-03T11:15:57.449Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/images/linux.png">
@@ -223,7 +223,7 @@
 <li>now 立刻关机<br>重启 reboot<br>关机  halt</li>
 </ul>
 <h3 id="网络配置"><a href="#网络配置" class="headerlink" title="网络配置"></a>网络配置</h3><p>查看网卡信息 ifconfig<br>网络配置 &#x2F;etc&#x2F;sysconfig&#x2F;network-script&#x2F;ifcfg-eth0<br>配置网卡 &#x2F;etc&#x2F;udev&#x2F;rules.d&#x2F;70-persistent-net.rules</p>
-<h2 id="用户管理"><a href="#用户管理" class="headerlink" title="用户管理"></a>用户管理</h2><p>创建用户 useradd<br>设置密码 passwd<br>存储组账号 &#x2F;etc&#x2F;group<br>系统用户配置文件 &#x2F;etc&#x2F;passwd<br>存储用户账号的密码 &#x2F;etc&#x2F;shadow<br>存储用户组账号的密码&#x2F;etc&#x2F;gshadow<br>用户名（需要手动配置参数） useradd<br>用户名 userdel<br>创建一个用户（自动配置，适合小白） adduser<br>组名 groupadd<br>组名 groupdel<br>给root设置密码 passwd root<br>切换到root用户，且不改变工作目录(其他用户同理) su root<br>切换到root用户，并切换到root工作目录(其他用户同理) su - root<br>系统环境变量&#x2F;etc&#x2F;profile<br>用户环境变量bash_profile<br>用户环境变量.bashrc<br>su user 切换用户，加载配置文件.bashrc<br>su - user 切换用户，加载配置文件&#x2F;etc&#x2F;profile ，加载bash_profile</p>
+<h2 id="用户管理"><a href="#用户管理" class="headerlink" title="用户管理"></a>用户管理</h2><p>创建一个用户 useradd 用户名<br>设置密码 passwd 用户名<br>存储组账号 &#x2F;etc&#x2F;group<br>系统用户配置文件 &#x2F;etc&#x2F;passwd<br>存储用户账号的密码 &#x2F;etc&#x2F;shadow<br>存储用户组账号的密码&#x2F;etc&#x2F;gshadow<br>删除一个用户 userdel 用户名<br>创建一个用户（自动配置，适合小白） adduser 用户名<br>组名 groupadd<br>组名 groupdel<br>给root设置密码 passwd root<br>切换到root用户，且不改变工作目录(其他用户同理) su root<br>切换到root用户，并切换到root工作目录(其他用户同理) su - root<br>系统环境变量&#x2F;etc&#x2F;profile<br>用户环境变量bash_profile<br>用户环境变量.bashrc<br>su user 切换用户，加载配置文件.bashrc<br>su - user 切换用户，加载配置文件&#x2F;etc&#x2F;profile ，加载bash_profile</p>
 <h2 id="安装软件"><a href="#安装软件" class="headerlink" title="安装软件"></a>安装软件</h2><h3 id="下载rpm安装包方式"><a href="#下载rpm安装包方式" class="headerlink" title="下载rpm安装包方式"></a>下载rpm安装包方式</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">centos rpm 方式</span><br><span class="line">安装 rpm -i jdk-XXX<span class="emphasis">_linux-x64_</span>bin.rpm</span><br><span class="line">查找 rpm -qa | grep jdk</span><br><span class="line">列表 rpm -qa | more</span><br></pre></td></tr></table></figure>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ubuntu dpkg 方式</span><br><span class="line">查找dpkg -I | grep jdk</span><br><span class="line">列表dpkg -I | more</span><br><span class="line">安装dpkg -i jdk-XXX<span class="emphasis">_linux-x64_</span>bin.deb</span><br></pre></td></tr></table></figure>
 
