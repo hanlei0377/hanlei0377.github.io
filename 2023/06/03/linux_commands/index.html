@@ -6,19 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>我的第一篇博客文章 | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一章">
+  <meta name="description" content="文件管理目录操作切换目录 cd查看目录 ls    -l   列出文件详细信息 或者直接ll -a   列出当前目录下所有文件及目录，包括隐藏的a(all)创建目录 mkdir   -p  创建目录，若无父目录，则创建p(parent)  输出信息 echo打印文件到命令行(查看文件) cat改变文件所属用户 chown改变文件所属组 chgrp下载文件 wget在文本文件中查找某个字符串 gr">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一篇博客文章">
-<meta property="og:url" content="http://example.com/2023/05/31/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/index.html">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2023/06/03/linux_commands/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="第一章">
+<meta property="og:description" content="文件管理目录操作切换目录 cd查看目录 ls    -l   列出文件详细信息 或者直接ll -a   列出当前目录下所有文件及目录，包括隐藏的a(all)创建目录 mkdir   -p  创建目录，若无父目录，则创建p(parent)  输出信息 echo打印文件到命令行(查看文件) cat改变文件所属用户 chown改变文件所属组 chgrp下载文件 wget在文本文件中查找某个字符串 gr">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-05-31T14:30:17.000Z">
-<meta property="article:modified_time" content="2023-05-31T14:31:27.107Z">
+<meta property="og:image" content="http://example.com/images/linux.png">
+<meta property="og:image" content="http://example.com/images/rwx%E6%9D%83%E9%99%90.png">
+<meta property="article:published_time" content="2023-06-03T10:18:00.535Z">
+<meta property="article:modified_time" content="2023-06-03T10:18:00.581Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/linux.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -154,27 +157,72 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-我的第一篇博客文章" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-linux_commands" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      我的第一篇博客文章
-    </h1>
-  
-
-        
-        <a href="/2023/05/31/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2023-05-31T14:30:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-05-31</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2>
+        <p><img src="/../images/linux.png" alt="linux"></p>
+<h1 id="文件管理"><a href="#文件管理" class="headerlink" title="文件管理"></a>文件管理</h1><h2 id="目录操作"><a href="#目录操作" class="headerlink" title="目录操作"></a>目录操作</h2><p>切换目录 cd<br>查看目录 ls  </p>
+<ul>
+<li>-l   列出文件详细信息 或者直接ll</li>
+<li>-a   列出当前目录下所有文件及目录，包括隐藏的a(all)<br>创建目录 mkdir  </li>
+<li>-p  创建目录，若无父目录，则创建p(parent)</li>
+</ul>
+<p>输出信息 echo<br>打印文件到命令行(查看文件) cat<br>改变文件所属用户 chown<br>改变文件所属组 chgrp<br>下载文件 wget<br>在文本文件中查找某个字符串 grep<br>统计文本中行数、字数、字符数 wc<br>部分显示 more&#x2F;less<br>查找文件 find &#x2F; -name ‘auto.cnf’<br>创建空文件 touch<br>复制文件 cp<br>移动或重命名 mv<br>删除文件 rm  </p>
+<ul>
+<li>-r    递归删除，可删除子目录及文件  </li>
+<li>-f    强制删除</li>
+</ul>
+<p>删除空目录 rmdir<br>树形结构显示目录，需要安装tree包  tree<br>显示当前目录 pwd<br>创建链接文件 ln<br>分页显示文本文件内容 more、less<br>显示文件头、尾内容  head、tail  </p>
+<h2 id="vim操作"><a href="#vim操作" class="headerlink" title="vim操作"></a>vim操作</h2><p>进入编辑器 vi&#x2F;vim，vim三种模式：命令模式、插入模式、编辑模式。使用ESC或i或：来切换模式。  </p>
+<ul>
+<li>进入编辑模式插入 i  </li>
+<li>退出编辑模式 esc  </li>
+<li>保存:后面输入w  </li>
+<li>退出:后面输入q  </li>
+<li>不保存退出:后面输入q!  </li>
+<li>显示行号 set number  </li>
+<li>查找关键字 &#x2F;xxxx 按n跳到下一个，shift+n上一个  </li>
+<li>复制光标所在行，并粘贴 yyp  </li>
+<li>h(左移一个字符←)、j(下一行↓)、k(上一行↑)、l(右移一个字符→)</li>
+</ul>
+<h2 id="打包压缩相关命令"><a href="#打包压缩相关命令" class="headerlink" title="打包压缩相关命令"></a>打包压缩相关命令</h2><p>打包压缩 tar\gzip\bzip2  </p>
+<ul>
+<li>-c 压缩文件</li>
+<li>-x 解压文件</li>
+<li>-z gzip压缩文件，不使用-z就是普通的tarball格式  </li>
+<li>-j bzip2压缩文件  </li>
+<li>-v 显示压缩或解压缩过程</li>
+<li>-f 要创建的文件，或要解压的文件，-f选项必须在所有选项中位置处于最后一个</li>
+<li>-C，选择解压的目的地，用于解压模式<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">常用的压缩组合</span><br><span class="line"><span class="bullet">  *</span> tar -cvf test.tar 1.txt 2.txt 3.txt，将1.txt 2.txt 3.txt压缩到test.tar文件内</span><br><span class="line"><span class="bullet">  *</span> tar -zcvf test.tar.gz 1.txt 2.txt 3.txt，将1.txt 2.txt 3.txt压缩到test.tar.gz文件内，使用gzip模式</span><br><span class="line"><span class="bullet">  *</span> 注意：</span><br><span class="line"><span class="code">	-z选项，如果使用的话，一般处于选项位第一个</span></span><br><span class="line"><span class="code">	-f选项，必须在选项位最后一个</span></span><br><span class="line"><span class="code">常用的解压组合</span></span><br><span class="line"><span class="code">  * tar -xvf test.tar，解压test.tar，将文件解压至当前目录</span></span><br><span class="line"><span class="code">  * tar -xvf test.tar -C /home/app，解压test.tar，将文件解压至指定目录(/home/app)</span></span><br><span class="line"><span class="code">  * tar -zxvf test.tar.gz -C /home/app，以gzip模式解压test.tar.gz，将文件解压至指定目录(/home/app)</span></span><br><span class="line"><span class="code">  * 注意：</span></span><br><span class="line"><span class="code">	-f选项，必须在选项组合体的最后一位</span></span><br><span class="line"><span class="code">	-z选项，建议在开头位置</span></span><br><span class="line"><span class="code">	-C选项，单独使用，和解压所需的其它参数分开</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="Linux管道"><a href="#Linux管道" class="headerlink" title="Linux管道"></a>Linux管道</h2><p>将一个命令的标准输出作为另一个命令的标准输入。也就是把几个命令组合起来使用，后一个命令除以前一个命令的结果。  </p>
+<p>例：grep -r “close” &#x2F;home&#x2F;* | more    在home目录下所有文件中查找，包括close的文件，并分页输出。  </p>
+<h1 id="文件权限管理"><a href="#文件权限管理" class="headerlink" title="文件权限管理"></a>文件权限管理</h1><p>三种基本权限<br>R：读，数值表示为 4<br>W：写，数值表示为 2<br>X：可执行，数值表示为1<br><img src="/../images/rwx%E6%9D%83%E9%99%90.png" alt="rwx"></p>
+<p>如上所示，jdk-8u281-linux-x64.rpm文件的权限为-rw-r–r–，一共十个字符，分成四段。<br>第一个字符“-”表示普通文件；这个位置还可能会出现l链接；d表示目录<br>第二三四个字符rw-表示当前所属用户的权限，所以用数值表示为 4+2&#x3D;6<br>第五六七个字符r–表示当前所属组的权限，所以用数值表示为 4<br>第八九十个字符r–表示其他用户权限，所以用数值表示为 4<br>所以操作此文件的权限用数值表示为 644</p>
+<h2 id="更改权限"><a href="#更改权限" class="headerlink" title="更改权限"></a>更改权限</h2><p>更改权限：<br>sudo chmod [u所属用户  g所属组  o其他用户  a所有用户]  [+增加权限  -减少权限]  [r  w  x]  目录名<br>例如：有一个文件 filename，权限为-rw-r—-x ,将权限值改为-rwxrw-r-x，用数值表示为765<br>sudo chmod u+x g+w o+r filename 也可以用数值表示 sudo chmod 765 filename</p>
+<h1 id="运行程序"><a href="#运行程序" class="headerlink" title="运行程序"></a>运行程序</h1><h2 id="命令行运行"><a href="#命令行运行" class="headerlink" title="命令行运行"></a>命令行运行</h2><p>运行.&#x2F;filename<br>退出ctrl+c</p>
+<h2 id="后台运行"><a href="#后台运行" class="headerlink" title="后台运行"></a>后台运行</h2><p>运行 nohup command &gt;out.file 2&gt;&amp;1 &amp;<br>退出 ps -ef |grep 关键字 |awk ‘{print $2}’|xarg kill -9</p>
+<h2 id="服务方式运行"><a href="#服务方式运行" class="headerlink" title="服务方式运行"></a>服务方式运行</h2><p>设置开机启动 systemctl enable<br>启动systemctl start<br>关闭systemctl stop</p>
+<h1 id="系统相关"><a href="#系统相关" class="headerlink" title="系统相关"></a>系统相关</h1><h2 id="系统管理命令"><a href="#系统管理命令" class="headerlink" title="系统管理命令"></a>系统管理命令</h2><p>显示指定文件的详细信息，比ls更详细 stat<br>显示在线登陆用户 who<br>显示当前操作用户 whoami<br>显示主机名 hostname<br>显示系统信息 uname<br>动态显示当前耗费资源最多进程信息 top<br>显示瞬间进程状态  ps \ ps -aux<br>查看目录大小 du -h &#x2F;home (带有单位显示目录信息)<br>查看磁盘大小 df -h (带有单位显示磁盘信息)<br>查看网络情况 ifconfig<br>测试网络连通 ping<br>显示网络状态信息 netstat<br>命令不会用了，看文档 如：man grep<br>清屏 clear<br>对命令重命名 alias ，如：alias showmeit&#x3D;”ps -aux” ，解除使用unaliax showmeit<br>杀死进程 kill，可以先用ps 或 top命令查看进程的id，然后再用kill命令杀死进程。kill -9 强制删除</p>
+<h2 id="防火墙"><a href="#防火墙" class="headerlink" title="防火墙"></a>防火墙</h2><p>查看防火墙状态 firewall-cmd –state<br>停止防火墙 systemctl stop firewalld.service<br>禁止firewall开机启动 systemctl disable firewalld.service</p>
+<h2 id="关机和重启"><a href="#关机和重启" class="headerlink" title="关机和重启"></a>关机和重启</h2><p>关机 shutdown -h now</p>
+<ul>
+<li>-r 关机重启</li>
+<li>-h 关机不重启</li>
+<li>now 立刻关机<br>重启 reboot<br>关机  halt</li>
+</ul>
+<h2 id="网络配置"><a href="#网络配置" class="headerlink" title="网络配置"></a>网络配置</h2><p>查看网卡信息 ifconfig<br>网络配置 &#x2F;etc&#x2F;sysconfig&#x2F;network-script&#x2F;ifcfg-eth0<br>配置网卡 &#x2F;etc&#x2F;udev&#x2F;rules.d&#x2F;70-persistent-net.rules</p>
+<h1 id="用户管理"><a href="#用户管理" class="headerlink" title="用户管理"></a>用户管理</h1><p>创建用户 useradd<br>设置密码 passwd<br>存储组账号 &#x2F;etc&#x2F;group<br>系统用户配置文件 &#x2F;etc&#x2F;passwd<br>存储用户账号的密码 &#x2F;etc&#x2F;shadow<br>存储用户组账号的密码&#x2F;etc&#x2F;gshadow<br>用户名（需要手动配置参数） useradd<br>用户名 userdel<br>创建一个用户（自动配置，适合小白） adduser<br>组名 groupadd<br>组名 groupdel<br>给root设置密码 passwd root<br>切换到root用户，且不改变工作目录(其他用户同理) su root<br>切换到root用户，并切换到root工作目录(其他用户同理) su - root<br>系统环境变量&#x2F;etc&#x2F;profile<br>用户环境变量bash_profile<br>用户环境变量.bashrc<br>su user 切换用户，加载配置文件.bashrc<br>su - user 切换用户，加载配置文件&#x2F;etc&#x2F;profile ，加载bash_profile</p>
+<h1 id="安装软件"><a href="#安装软件" class="headerlink" title="安装软件"></a>安装软件</h1><h2 id="下载rpm安装包方式"><a href="#下载rpm安装包方式" class="headerlink" title="下载rpm安装包方式"></a>下载rpm安装包方式</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">centos rpm 方式</span><br><span class="line">安装 rpm -i jdk-XXX<span class="emphasis">_linux-x64_</span>bin.rpm</span><br><span class="line">查找 rpm -qa | grep jdk</span><br><span class="line">列表 rpm -qa | more</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ubuntu dpkg 方式</span><br><span class="line">查找dpkg -I | grep jdk</span><br><span class="line">列表dpkg -I | more</span><br><span class="line">安装dpkg -i jdk-XXX<span class="emphasis">_linux-x64_</span>bin.deb</span><br></pre></td></tr></table></figure>
+
+<h2 id="yum方式"><a href="#yum方式" class="headerlink" title="yum方式"></a>yum方式</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">centos yum 方式</span><br><span class="line">搜索 yum search jdk</span><br><span class="line">安装 yum install java-11-openjdk.x86<span class="emphasis">_64</span></span><br><span class="line"><span class="emphasis">删除 yum erase java-11 -openjdk.x86 64</span></span><br><span class="line"><span class="emphasis">配置文件 /etc/yum.repos.d/CentOS-Base.repo</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ubuntu apt-get 方式</span><br><span class="line">搜索 apt・cache search jdk</span><br><span class="line">安装apt-get install openjdk-9-jdk</span><br><span class="line">删除apt-get purge openjdk-9-jdk</span><br><span class="line">配置文件/etc/apt/sources. Iist</span><br></pre></td></tr></table></figure>
+
+<!-- <meta http-equiv="refresh" content="0.5"> -->
       
 
       
@@ -253,7 +301,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2023/05/31/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2023/06/03/linux_commands/" alt="微信分享二维码">
     </div>
 </div>
 
